@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    box-sizing: border-box;
+    margin: 20px;
+    height: 52vh;
+}
+#len{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    text-shadow: 2px 2px rgb(58, 4, 109);
+}
+label{
+    font-size: 20px;
+}
+hr{
+    color: black;
+}
+button{
+    text-align: center;
+    color: black;
+    background-color:whitw;
+    font-size: 20px;
+    padding: 5px;
+
+}
+button:hover{
+    color: rgb(119, 119, 197);
+    background-color: black;
+}
