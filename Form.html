@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate()
+        {
+            if(document.myForm.name.value=="")
+            {
+                alert("Please Provide your Firstname")
+                document.myForm.name.focus()
+                return false
+            }
+            if(document.myForm.lname.value=="")
+            {
+                alert("LastName must be only string without white spaces")
+                document.myForm.lname.focus()
+                return false
+            }
+            if(document.myForm.email.value=="")
+            {
+                alert("Email Address must be in valid format with @ symbol")
+                document.myForm.email.focus()
+                return false
+            }
+            if(document.myForm.Pno.value=="")
+            {
+                alert("Mobile Number must have 10 digits")
+                document.myForm.Pno.focus()
+                return false
+            }
+            if(document.myForm.password.value=="")
+            {
+                alert("Password must have at least one Uppercase, lowercase, digit, special characters & 8 characters")
+                document.myForm.password.focus()
+                return false
+            }
+            if(document.myForm.cpass.value=="")
+            {
+                alert("Confirm Password is required")
+                document.myForm.cpass.focus()
+                return false
+            }
+            
+            
+            return true
+
+
+        }
+        
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="success.js" target="_self" name="myForm" onsubmit="return validate()" style="border: 2px solid black;">
+        <legend id="len">How to Validate Form Using Javascript</legend><br>
+         <hr>
+         
+          <label for="name">First Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter Your First name"><br><br>
+          <label for="lname">Last Name</label>
+          <input type="text" name="lname" id="lname" placeholder="Enter Your last name"><br><br>
+          <label for="eid">Email Id</label>
+          <input type="email" name="email" id="eid" placeholder="Enter Your Email Id"><br><br>
+          <label for="mno">Mobile Number</label>
+          <input type="number" name="Pno" id="mno" placeholder="Enter Your Mobile number"><br><br>
+          <label for="pass">Password</label>
+          <input type="password" name="password" id="pass" placeholder="Enter the strong password"><br><br>
+          <label for="cpass">Confirm Password</label>
+          <input type="password" name="cpass" id="cpass" placeholder="Re-Enter the password"><br><br>
+          <center><button onclick="display()">Submit</button>
+          </center>
+    </form>
+     
+    </body>
+</html>
